@@ -1,0 +1,16 @@
+package ve.com.thisisalexis.kitchener.api;
+
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/recipes")
+public class RecipeAPI {
+
+	@GetMapping
+	public String list() {
+		return "Hello World";
+	}
+	
+}
